@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    Komentarze nie sa widziane przez przegladarke,
+    ale sa widziane w dev tools
+    
+    komentarz blokowy
+    
+    ctrl + /
+-->
+    <!-- Kometarz liniowy -->
+    <!-- elementy blokowe i liniowe -->
+    <!-- header#main-header>a{Link $}*5 -->
+    <header id="main-header">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+        <a href="">Link 5</a>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eligendi totam fugiat facilis nisi! Debitis vitae iusto facere, excepturi nesciunt optio perspiciatis. Numquam inventore doloribus error dolores reiciendis veritatis. Et.</p>
+    </header>
+    
+    <!-- formularze -->
+    
+    <!-- zeby powiedziec przegladarce, ze w tym miejscu zaczynamy formularz uzywamy znacznika <form> -->
+    <form action="" method="">
+       
+        <!-- do formularza mozemy dodac takie elementy jak: input (typu: text, number, tel, radio, checkbox, password, tel, email), label (etykieta pola), textarea, select -->
+        
+        <!-- aby spiac element label z input'em nalezy ustawic wartosc atrybutu for label'a zgodne z wartoscia atrybutu id input'a -->
+        
+        <!-- podpowiedź do input  placeholder="treść podpowiedzi" -->
+        
+        <label for="name">Wpisz imię:</label>
+        <input type="text" id="name" placeholder="Wpisz imię">
+        
+        <!-- aby zgrupowac ze soba input'y typu "radio", nalezy ustawic im taka sama wartosc atrybutu "name" -->
+        <label for="woman"><input type="radio" name="gender" id="woman">kobieta</label>
+        
+        <label for=""><input type="radio" name="gender">mezczyzna</label>
+<!--        <label for=""><input type="radio"></label>-->
+        
+        <input type="number">
+        <input type="tel">
+        <input type="password">
+        <input type="email">
+        <input type="search">
+        
+        <input type="radio">
+        
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+        <!-- select tworzy liste rozwijana, z ktorej mozemy cos wybrac -->
+        <select name="" id="">
+            <option value="krakow">krakow</option>
+            <option value="warszawa">warszawa</option>
+            <option value="katowice">katowice</option>
+        </select>
+        
+        <!-- input typu submit wykorzystywany jest do wysylania formularza -->
+        <input type="submit">
+    </form>
+    
+    <form action="https://formspree.io/adanikpl@gmail.com" method="POST">
+        
+        <label for="name">Imię: </label>
+        <input type="text" id="name" placeholder="Wpisz imię">
+        <br /><br />
+        <label for="nazwisko">Nazwisko: </label>
+        <input type="text" id="nazwisko" placeholder="Wpisz nazwisko">
+        <br /><br />
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" placeholder="Podaj e-mail">
+        <br /><br />
+        <label for="email">Telefon: </label>
+        <input type="tel" id="email" placeholder="Podaj nr telefonu">
+        <br /><br />
+        <label for="wiadomosc">Wiadomość: </label><br />
+        <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" placeholder="Napisz w czym problem"></textarea>
+        <br />
+        <input type="submit">
+    </form>
+    
+    
+    
+    
+    
+</body>
+</html>
